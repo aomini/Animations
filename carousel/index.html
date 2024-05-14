@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container-gallery {
+        width: 100%;
+        margin: auto auto;
+        max-width: 73.5rem;
+        display: flex;
+        gap: 4rem;
+      }
+
+      .benefits-gallery {
+        height: 34rem;
+        position: relative;
+        max-width: 29.75rem;
+      }
+
+      .swiper-benefits-thumb {
+        background-image: url("https://assets-global.website-files.com/6458f30fed157c01444bd0b2/649186bcd08ddae77b3e894f_bloc-02.jpg");
+        background-position: 50%;
+        background-size: cover;
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        /* width: 485px; */
+        overflow: hidden;
+      }
+
+      .swiper-benefits-thumb .swiper-slide {
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        /* width: 485px; */
+      }
+
+      .swiper-benefits-thumb .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* width: 485px; */
+      }
+
+      .swiper-benefits-thumb.is-first {
+        position: absolute;
+        top: 0;
+        right: 115%;
+        background-color: rebeccapurple;
+      }
+
+      .swiper-benefits-thumb.is-last {
+        position: absolute;
+        top: 0;
+        left: 230%;
+        background-color: bisque;
+      }
+
+      .swiper-wrapper {
+        display: flex;
+      }
+      .benefit-container{
+        flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 29.75rem;
+      display: flex;
+      }
+
+      .content:not(:first-child){
+        display: none;
+      }
+    </style>
+  </head>
+  <body style="margin: auto">
+    <div class="" style="overflow: hidden">
+      <div class="container-gallery">
+        <div class="benefits-gallery">
+          <div class="swiper-benefits-thumb is-first">
+            <div role="list" class="swiper-wrapper" id="first">
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187b7b88c5c47292cdbe9_Security.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187c3d9536cfdac725fd8_Quality.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187aa7f1ea727211d5115_Support.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/6491879f5752c40c1a170455_integration.webp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-benefits-thumb">
+            <div role="list" class="swiper-wrapper" id="main">
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187c3d9536cfdac725fd8_Quality.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187aa7f1ea727211d5115_Support.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/6491879f5752c40c1a170455_integration.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187b7b88c5c47292cdbe9_Security.webp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-benefits-thumb is-last">
+            <div role="list" class="swiper-wrapper" id="last">
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187aa7f1ea727211d5115_Support.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/6491879f5752c40c1a170455_integration.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187b7b88c5c47292cdbe9_Security.webp"
+                />
+              </div>
+              <div role="listitem" class="swiper-slide">
+                <img
+                  src="https://assets-global.website-files.com/645a730e85c9b4dfd57de5a1/649187c3d9536cfdac725fd8_Quality.webp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="benefit-container"/>
+          <h1>Benefits</h1>
+          <div id="js__slideContent">
+            <div class="content" >
+              <h1>Unparalleled quality
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque
+                eos atque excepturi, necessitatibus eum quasi minus iste enim hic
+                rerum veniam nobis ratione delectus pariatur cum quo sunt
+                accusantium?
+              </p>
+            </div>
+            <div class="content" >
+              <h1>Truly multilingual
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque
+                eos atque excepturi, necessitatibus eum quasi minus iste enim hic
+                rerum veniam nobis ratione delectus pariatur cum quo sunt
+                accusantium?
+              </p>
+            </div>
+            <div class="content" >
+              <h1>100% security
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque
+                eos atque excepturi, necessitatibus eum quasi minus iste enim hic
+                rerum veniam nobis ratione delectus pariatur cum quo sunt
+                accusantium?
+              </p>
+            </div>
+            <div class="content" >
+              <h1>Easy integration
+
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque
+                eos atque excepturi, necessitatibus eum quasi minus iste enim hic
+                rerum veniam nobis ratione delectus pariatur cum quo sunt
+                accusantium?
+              </p>
+            </div>
+          </div>
+          <div class="slide-controls">
+            <button id="prev">Prev</button>
+            <button id="next">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- Working -->
+    <!-- <script>
+      const width = 485;
+      var tl = gsap.timeline({ forwards: true });
+      tl.to(".swiper-wrapper", { x: -485, duration: 2 });
+      tl.to(".swiper-wrapper", { x: -485 * 2, duration: 2 });
+      tl.to(".swiper-wrapper", {
+        x: -485 * 3,
+        duration: 2,
+        onComplete() {
+          const wrappers = document.querySelectorAll(".swiper-wrapper");
+          Array.from(wrappers).forEach((wrapper) => {
+            const item = wrapper.firstElementChild;
+            wrapper.appendChild(item);
+          });
+        },
+      });
+    </script> -->
+
+    <script>
+      const width = document.querySelector(".swiper-slide").clientWidth;
+      let current = 0;
+
+      // Set content ids
+      const contents = document.querySelectorAll('#js__slideContent > .content')
+      Array.from(contents).forEach((x, i) => {
+        x.setAttribute('data-content-id', i)
+        if(!i)
+         x.classList.add('current')
+      })
+
+      const setActiveContent = () => {
+        const currentContent = document.querySelector('.current');
+        currentContent.style.display = 'none';
+        currentContent.classList.remove('current')
+        current++;
+
+        const nextContent = document.querySelector(`.content[data-content-id="${current}"]`)
+        nextContent.style.display = 'block';
+        nextContent.classList.add('current')
+      }
+
+      var tl = gsap.timeline({ paused: false, delay: 2, });
+      tl.to(".swiper-wrapper", { x: -width, duration: 2, delay: 2, onComplete(){
+        setActiveContent()
+      }});
+      tl.to(".swiper-wrapper", { x: -width * 2, duration: 2, delay: 2, onComplete(){
+        setActiveContent()
+      }});
+      tl.add("abc");
+
+      function animateSwiper() {
+        tl.to(".swiper-wrapper", {
+          x: -width * 3,
+          duration: 2,
+          delay: 2,
+          onComplete: () => {
+            const wrappers = document.querySelectorAll(".swiper-wrapper");
+            wrappers.forEach((wrapper) => {
+              const item = wrapper.firstElementChild;
+              wrapper.appendChild(item);
+            });
+            gsap.set(".swiper-wrapper", { x: -width * 2 }); // Reset position after shifting the items
+            setActiveContent();
+            animateSwiper(); // Recursively call the function to loop the animation
+          },
+        });
+      }
+
+      // Start the animation
+      animateSwiper();
+
+      
+
+    </script>
+  </body>
+</html>
